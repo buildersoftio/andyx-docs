@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://getdoks.org/">
-    <img alt="Andy X" src="~/../static/images/T1.png" width="200">
+  <a href="https://buildersoftdev.azurewebsites.net/AndyX/">
+    <img alt="Andy X" src="~/../static/images/T1.png" width="300">
   </a>
 </p>
 
