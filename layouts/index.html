@@ -1,0 +1,65 @@
+{{ define "main" }}
+<section class="section container-fluid mt-n3 pb-3">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <h1 class="mt-0">{{ .Title }}</h1>
+    </div>
+    <div class="col-lg-9 col-xl-8 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}get-started/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <p class="meta">The <a href="https://github.com/buildersoftdev/andyx/blob/main/LICENSE.txt">Andy X Knowledge Base is licensed under Apache 2.0</a>, and available to all Andy X users. The information and code samples are available freely and distributed under the Apache 2.0 license.</p>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+  {{ if eq $.Site.Language.LanguageName "English" }}
+  <section class="section section-sm">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">About Andy X</h2>
+          <!-- <p>Get A+ scores on <a href="https://observatory.mozilla.org/analyze/doks.netlify.app">Mozilla Observatory</a> out of the box. Easily change the default Security Headers to suit your needs.</p> -->
+          <p>Andy X is an open-source distributed streaming platform designed to deliver the best performance possible for high-performance data pipelines...</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Get Started</h2>
+          <!-- <p>Get 100 scores on <a href="https://googlechrome.github.io/lighthouse/viewer/?gist=59aafe464a68f8bc30b8e9a636d5b053">Google Lighthouse</a> by default. Doks removes unused css, prefetches links, and lazy loads images.</p> -->
+          <p>To run Andy X locally, the fastest way is to do it using Docker. You can download Andy X images from Docker Hub, and run it using Docker commands.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">Install, Deploy and Upgrade</h2>
+          <!-- <p>Use sensible defaults for structured data, open graph, and Twitter cards. Or easily change the SEO settings to your liking.</p> -->
+          <p>Built from the beginning to be upgradable, and deployable anywhere and anytime, in the cloud or on-prem.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">Andy X for Developers</h2>
+          <p>The best data streaming engine for developers, enabling new architecture style possibilities like Reactive Architecture, by utilizing Andy X libraries and Streams.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">How To</h2>
+          <p>By clicking Get Started, you can learn more about Andy X, and also checking the examples and learn how to run, deploy and making it ready for your project.</p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">References</h2>
+          <p>With Andy X eco-system there are a lot of different services and libraries like Andy X Client, Cli, Streams, Portal, Conenctors of conenctors as 1st party and 3rd party.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-sm container-fluid">
+  <div class="row justify-content-center text-center">
+    <div class="col-lg-9">
+      {{- .Content -}}
+
+    </div>
+  </div>
+</section>
+{{ end }}
