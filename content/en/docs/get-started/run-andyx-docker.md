@@ -65,9 +65,9 @@ If you start Andy X successfully, you will see Information-level log messages li
 2022-10-24 00:01:40  andyx   Information      |     Starting cluster for the first time
 2022-10-24 00:01:40  andyx   Information      |     Initial configuration in process ...
 2022-10-24 00:01:41  andyx   Information      |     Initial configuration is done
-2022-10-24 00:01:41  andyx   Information      |     Background service for retention at system/connections/storage/events has been initiaized
-2022-10-24 00:01:41  andyx   Information      |     Background service for retention at system/connections/producer/events has been initiaized
-2022-10-24 00:01:41  andyx   Information      |     Background service for retention at system/connections/consumer/events has been initiaized
+2022-10-24 00:01:41  andyx   Information      |     Retention service for system/connections/storage/events is been initiaized
+2022-10-24 00:01:41  andyx   Information      |     Retention service for system/connections/producer/events is been initiaized
+2022-10-24 00:01:41  andyx   Information      |     Retention service for system/connections/consumer/events is been initiaized
 2022-10-24 00:01:41  andyx   Information      |     Andy X is ready
 ```
 
@@ -93,12 +93,12 @@ Add Andy X Client library from Nuget to your app:
 Andy X platform has been designed as distributed system. The Node is the edge service that connects Producers and Consumers with each-other, you can integrate also other services with Andy X, like **Andy X Portal** and **Andy X Connect** connectors.
 
 
-> **What is Andy X Portal**
+> **What is Andy X Portal?**
 Is an open-source cloud-native web application designed to manage Andy X Nodes and Storages already deployed. It's a standalone web app that it is used to check Andy X Cluster. As a solutions has been designed from the beginning to be cloud-native also can run on-prem using Docker. Portal can be deployed as standalone application.
 
 We are using docker-compose to run this bundle of services with each-other as a simple cluster.
 
-> **What is docker-compose**
+> **What is docker-compose?**
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. Then, with a single command, you create and start all the services from your configuration. To learn more about all the features of Compose, see the list of features.
 
 To run a docker-compose file we will run the command via terminal in the docker-compose.yaml file.
