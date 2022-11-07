@@ -15,7 +15,6 @@ toc: true
 
 <center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
-**Check later**
 
 ## Overview
 
@@ -75,32 +74,33 @@ Using Andy X Client APIs, if the consumer will request Acknowledgement to Andy X
 Using Andy X Client APIs, if the consumer will request Acknowledgement to Andy X as **Message Unacknowledged**. In *Resilient Mode*, the same message will be send to process again to the Consumer. In *Nonresilient Mode*, the *MessageEntryId* will be stored into **Subscription Unacked ChangeLog** and it will stay there till the rest of messages are *Consumed* and *Acknowledged*. *If there are no new messages, Node will start producing un-acked messages from the Subscription Unacked ChangeLog*.
 
 
-```csharp
-
-        private bool Consumer_MessageReceived(object sender, Andy.X.Client.Events.Consumers.MessageReceivedArgs<SimpleMessage> e)
-        {
-            Console.WriteLine($"Message arrived: payload as raw: '{e.Payload}'; payload as simpleMessage name='{e.GenericPayload.Name}'");
-
-            // Message acknowledged
-            return true;
-        }
-```
 ## Simple Consumer
 
-Below you will find a simple code example how to create a new consumer
+Below you will find a simple code example how to create a new consumer which it requires to create a XClient object
 
 ```csharp
-        consumer = Consumer<SimpleMessage>.CreateNewConsumer(client)
-            .ForComponent("simple")
-            .AndTopic("simple-message")
-            .WithName("simple-consumer")
-            .WithInitialPosition(InitialPosition.Earliest)
-            .AndSubscriptionType(SubscriptionType.Exclusive)
-            .Build();
+var consumer = Consumer<string, MessageExample>.CreateNewConsumer(xClient)
+    .ForComponent("streams-examples")
+    .AndTopic("sink-topic")
+    .WithName("sink-topic-consumer")
+    .AndSubscription(subscription =>
+    {
+        subscription.Name = "unique-nonresilient-subscription";
+        subscription.Type = Andy.X.Client.Configurations.SubscriptionType.Unique;
+        subscription.Mode = Andy.X.Client.Configurations.SubscriptionMode.NonResilient;
+        subscription.InitialPosition = Andy.X.Client.Configurations.InitialPosition.Earliest;
+    })
+    .Build();
 
-            consumer.MessageReceived += Consumer_MessageReceived;
+consumer.MessageReceivedHandler((key, message) =>
+{
+    Console.WriteLine($"Message received, key:{key}; messageValue:{message.Payload.Text}; entryId:{message.EntryId}; nodeId:{message.NodeId}");
+    
+    // acknowledge the message
+    consumer.AcknowledgeMessage(message);
+});
 
-        consumer
-            .ConnectAsync()
-            .Wait();
+await consumer.SubscribeAsync();
+
+
 ```

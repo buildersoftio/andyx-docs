@@ -59,3 +59,24 @@ Access modes of Producer will be configured when the producer will be created to
 
 Producers also can produce messages as batch of messages in a single request. The batch size is defined by the maximum number of messages and the maximum publish latency.
 In Andy X, batches are tracked and stored as individual messages and not as a single units, this means that the Consumers will consume these messages as individual messages.
+
+
+## Simple Producer
+
+Below you will find a simple code example how to create a new producer which it requires to create a XClient object
+
+```csharp
+var producer = Producer<string, MessageExample>.CreateNewProducer(xClient)
+    .ForComponent("streams-examples")
+    .AndTopic("source-topic")
+    .WithName("first-producer")
+    .WithSettings(settings =>
+    {
+        settings.RequireCallback = false;
+    })
+    .Build();
+
+await producer.OpenAsync();
+
+var result = await producer.SendAsync($"key", new MessageExample() { Text = "first-message" })
+```
