@@ -59,7 +59,7 @@ Clusters can be configured in three configurations
 ## Metadata store
 The Andy X metadata store all the metadata of an Andy X cluster, such as tenant, product, component, topic metadata, node load data, and so on. An*dy X will replicate all metadatas to all nodes connected*. Andy X uses **Andy X Raft** for metadata storage, cluster configuration and coordination. The Andy X Metadata store is bounded inside the Andy X Cluster because of the custom rafting, but in next versions of Andy X, *Metadata store will be able to deploy in a separate service*.
 
-> Andy X with v3.1 will support more meatadata backend services, including [FASTER](https://microsoft.github.io/FASTER/), [MSSQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019), [REDIS](https://redis.io/) and more.
+> Andy X with v3.1 will support more metadata backend services, including [FASTER](https://microsoft.github.io/FASTER/), [MSSQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2019), [REDIS](https://redis.io/) and more.
 
 ## Persistent storage
 
