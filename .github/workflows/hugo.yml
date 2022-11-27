@@ -1,5 +1,5 @@
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -30,7 +30,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.101.0
+      HUGO_VERSION: 0.102.3
     steps:
       - name: Install Hugo CLI
         run: |
@@ -43,6 +43,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+        
+      - name: Node Ci
+        run: npm ci
+        
+      - name: Node Run
+        run: npm run build
+        
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
