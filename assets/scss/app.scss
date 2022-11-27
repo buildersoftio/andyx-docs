@@ -1,12 +1,11 @@
 /** Import Bootstrap functions */
-@import "bootstrap/functions";
-
+@import "bootstrap/scss/functions";
 
 /** Import theme variables */
 @import "common/variables";
 
 /** Import Bootstrap */
-@import "bootstrap/bootstrap";
+@import "bootstrap/scss/bootstrap";
 
 /** Import highlight.js */
 // @import "highlight.js/scss/github-dark-dimmed";
