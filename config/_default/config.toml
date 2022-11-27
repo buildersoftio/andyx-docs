@@ -1,4 +1,4 @@
-baseurl = "https://doks.netlify.app/"
+baseurl = "https://buildersoftdev.github.io/andyx-docs/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
