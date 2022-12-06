@@ -13,7 +13,7 @@ weight: 201
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 Andy X is developed and is supported by Buildersoft, license is under Apache Software Foundation and .NET Foundation.
 

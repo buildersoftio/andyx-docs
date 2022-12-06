@@ -6,7 +6,7 @@ date: 2022-10-04T09:19:42+01:00
 lastmod: 2022-10-04T09:19:42+01:00
 draft: false
 weight: 1
-images: ["~/../../../../../images/T1.png"]
+images: ["/images/T1.png"]
 categories: ["andyx"]
 tags: ["distributed", "andyx", "streams"]
 contributors: ["Enes Hoxha"]

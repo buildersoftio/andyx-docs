@@ -13,7 +13,7 @@ weight: 102
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 # Set up a standalone Andy X locally
 For local development and testing, you can run Andy X Node as standalone mode on your machine. The standalone mode includes Andy X Node, the necessary Andy X Storage components running inside of a single dotNET Application.

@@ -13,6 +13,6 @@ weight: 212
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 Andy X supports a pluggable authentication mechanism which can be configured at the proxy and/or the node. Andy X also supports a pluggable authorization mechanism. These mechanisms work together to identify the client and its access rights on components, products, tenants and Admin APIs.

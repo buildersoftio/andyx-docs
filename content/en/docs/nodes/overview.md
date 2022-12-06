@@ -13,13 +13,13 @@ weight: 301
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Overview
 The bridge that connects clients with each-other (Producers and Consumers) is Node service. An Andy X Node also known as Broker. A single Andy X Server is called a Andy X Node. That Andy X Node is a program that runs on the .NET eco-system (on top of CLR) and usally a server that is meant to be an Andy X Node will solely run the necessary program and nothing else. Nodes can connect with each-other to create a Cluster.
 
 In the diagram bellow, are shown all the internal components of Andy X Node.
-<center><img src="~/../../../../../images/andyx-node-high.png" style="margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/andyx-node-high.png" style="margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Endpoints
 

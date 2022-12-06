@@ -13,7 +13,7 @@ weight: 202
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 Andy X is bult on the publish-subscribe pattern (often abbreviated to pub-sub). In this pattern, producers publish messages to a topic, consumers subscribe to those topics, process incoming messages, and sent acknowledgements to the node when processing is finished.
 

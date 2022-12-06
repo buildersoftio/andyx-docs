@@ -13,13 +13,13 @@ weight: 209
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Overview
 
 A subscription is a named configuration rule that determines how messages are delivered to consumers. Three subscription types are available in Andy X: **unique**, **failover** and **shared**.
 These types are illustrated in the figure below.
-<center><img src="~/../../../../../images/andyx-subscriptions-types.png" style="margin-top: 40px; margin-bottom: 40px" alt="Subscription Types" align="middle"></center>
+<center><img src="/images/andyx-subscriptions-types.png" style="margin-top: 40px; margin-bottom: 40px" alt="Subscription Types" align="middle"></center>
 
 ### Pub-Sub or Queuing
 
@@ -37,7 +37,7 @@ When a subscription is created it has no consumers, to create a subscription is 
 
 In Unique type, only a single consumer is allowed to attach to the subscription. If multiple consumers subscribe to a topic using the same subscription, an error occurs.
 In the diagram below, only Consumer 1-0 is allowed to consume messages.
-<center><img src="~/../../../../../images/andyx-subscriptions-unique.png" style="margin-top: 40px; margin-bottom: 40px" alt="Unique Type" align="middle"></center>
+<center><img src="/images/andyx-subscriptions-unique.png" style="margin-top: 40px; margin-bottom: 40px" alt="Unique Type" align="middle"></center>
 
 > ***Unique is the default subscription type***.
 
@@ -50,7 +50,7 @@ For non-sharded topic, node will pick consumer in the order they subscribe to th
 For sharded topics, node will sort consumers by priority level and lexicographical order of consumer name. Then node will try to evenly assigns topics to consumers with the highest priority level.
 
 In the diagram below, Consumer-2-0 is the master consumer while Consumer-2-1 would be the next consumer in line to receive messages if Consumer-2-0 is disconnected.
-<center><img src="~/../../../../../images/andyx-subscriptions-failover.png" style="margin-top: 40px; margin-bottom: 40px" alt="Failover Type" align="middle"></center>
+<center><img src="/images/andyx-subscriptions-failover.png" style="margin-top: 40px; margin-bottom: 40px" alt="Failover Type" align="middle"></center>
 
 ### Shared
 
@@ -58,7 +58,7 @@ In shared or round robin type, multiple consumers can attach to the same subscri
 
 In the diagram below, Consumer-3-1 and Consumer-3-2 are able to subscribe to the topic, but Consumer-3-3 and others could as well.
 
-<center><img src="~/../../../../../images/andyx-subscriptions-shared.png" style="margin-top: 40px; margin-bottom: 40px" alt="Shared Type" align="middle"></center>
+<center><img src="/images/andyx-subscriptions-shared.png" style="margin-top: 40px; margin-bottom: 40px" alt="Shared Type" align="middle"></center>
 
 > **Limitations of Shared type**:
 > When using Shared type, be aware that:

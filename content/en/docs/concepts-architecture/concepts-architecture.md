@@ -13,7 +13,7 @@ weight: 203
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Overview
 
@@ -27,7 +27,7 @@ In an Andy X Clsuter:
 
 The diagram below provides an illustration of an Andy X cluster:
 
-<center><img src="~/../../../../../images/andy-x-architecture.png" style="margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/andy-x-architecture.png" style="margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Nodes
 

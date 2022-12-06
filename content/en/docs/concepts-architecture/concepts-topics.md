@@ -13,7 +13,7 @@ weight: 207
 toc: true
 ---
 
-<center><img src="~/../../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Overview
 
@@ -21,7 +21,7 @@ This section gives a high-level overview of how the topics works and an introduc
 
 To see examples how to create and configure a topic, refers to these guides. For additional examples, including using of Buildersoft Cloud, refers to Buildersoft Cloud docs.
 
-<center><img src="~/../../../../../images/andyx-topic.png" style=" margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/andyx-topic.png" style=" margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Concepts
 
@@ -39,7 +39,7 @@ Andy X topics are multi-subscriber.  This means that a topic can have zero, one,
 
 In Andy, topics are sharded and replicated across nodes (depends on Cluster Configuration) throughout the implementation. Nodes refers to each of the Main Nodes in Andy X Cluster. Shards are important because they enable parallelization of topics, enabling high message throughput. Below, is illustrating how a topic is created in Andy X Cluster.
 
-<center><img src="~/../../../../../images/high-level-topic.png" style=" margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="/images/high-level-topic.png" style=" margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 Entries (Offsets) are assigned to each message in a shard to keep track of the messages in the different shards of a topic
 
 
