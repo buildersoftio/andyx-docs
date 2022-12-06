@@ -1,2 +1,2 @@
-baseURL = "https://buildersoftdev.github.io/"
-canonifyURLs = false
+baseURL = "https://buildersoftdev.github.io/andyx-docs/"
+canonifyURLs = true
