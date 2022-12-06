@@ -15,3 +15,9 @@ homepage: false
 ---
 
 Welcome to the world of andy!
+
+# Andy X is an open source distributed streaming platform
+
+Andy X, an open-source distributed streaming platform designed to deliver the best performance possible for high-performance data pipelines, streaming analytics, streaming between microservices and data integrations.
+
+<center><img src="/images/andyx-node-log.svg" alt="andy x node" align="middle"></center>
