@@ -13,7 +13,7 @@ weight: 101
 toc: true
 ---
 
-<center><img src="./images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
+<center><img src="./../../../../images/T1.png" style="height:100px; margin-top: 40px; margin-bottom: 40px" alt="andy x logo" align="middle"></center>
 
 ## Get started
 
